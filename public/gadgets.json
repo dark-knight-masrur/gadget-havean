@@ -13,7 +13,8 @@
       "HDMI port, SDXC card slot, MagSafe 3"
     ],
     "price": 2499,
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-silver-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697843360665"
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-silver-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697843360665",
+    "rating": 4.8
   },
   {
     "id": 2,
@@ -29,7 +30,8 @@
       "Thin and light design"
     ],
     "price": 1999,
-    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/products/notebooks/xps-notebooks/xps-15-9530/media-gallery/notebook-xps-15-9530-nt-blue-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&wid=3518&hei=2400&qlt=100,1&resMode=sharp2&size=3518,2400&chrss=full"
+    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/notebook-xps-15-9530-nt-blue-gallery-1.psd?fmt=pjpg&pscan=auto&scl=1&wid=3518&hei=2400",
+    "rating": 4.6
   },
   {
     "id": 3,
@@ -45,7 +47,8 @@
       "Action button"
     ],
     "price": 1199,
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1692846359310"
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium?wid=1280&hei=720&fmt=jpeg&qlt=90&.v=1692846359310",
+    "rating": 4.7
   },
   {
     "id": 4,
@@ -61,7 +64,8 @@
       "Ceramic Shield front"
     ],
     "price": 799,
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1692911050235"
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=1280&hei=720&fmt=jpeg&qlt=90&.v=1692911050235",
+    "rating": 4.5
   },
   {
     "id": 5,
@@ -77,7 +81,8 @@
       "AI-powered features"
     ],
     "price": 1299,
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/ae/sm-s928blgcmid/gallery/ae-galaxy-s24-s928-sm-s928blgcmid-539086922?$650_519_PNG$"
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/ae/sm-s928blgcmid/gallery/ae-galaxy-s24-s928-sm-s928blgcmid-539086922",
+    "rating": 4.6
   },
   {
     "id": 6,
@@ -93,7 +98,8 @@
       "7 years of OS updates"
     ],
     "price": 999,
-    "image": "https://store.google.com/static/product/image/pixel_8_pro_1.png"
+    "image": "https://store.google.com/static/product/image/pixel_8_pro_1.png",
+    "rating": 4.4
   },
   {
     "id": 7,
@@ -109,7 +115,8 @@
       "Carbon neutral options"
     ],
     "price": 399,
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MT673ref_VW_PF+watch-45-alum-silver-nc-8s_VW_PF_WF_SI?wid=700&hei=700&fmt=jpeg&qlt=90&.v=1693010641058"
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MT673ref_VW_PF+watch-45-alum-silver-nc-8s_VW_PF_WF_SI?wid=700&hei=700&fmt=jpeg&qlt=90&.v=1693010641058",
+    "rating": 4.7
   },
   {
     "id": 8,
@@ -125,7 +132,8 @@
       "Wear OS 4"
     ],
     "price": 369,
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/ae/230726/gallery/ae-galaxy-watch6-classic-sm-r945fzsamea-thumb-534856538?$216_172_PNG$"
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/ae/230726/gallery/ae-galaxy-watch6-classic-sm-r945fzsamea-thumb-534856538",
+    "rating": 4.5
   },
   {
     "id": 9,
@@ -141,7 +149,8 @@
       "MagSafe charging"
     ],
     "price": 1099,
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-spacegray-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1708362518063"
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-spacegray-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1708362518063",
+    "rating": 4.6
   },
   {
     "id": 10,
@@ -157,7 +166,8 @@
       "1080p FaceTime HD camera"
     ],
     "price": 1299,
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-15-midnight-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1683844820943"
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-15-midnight-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1683844820943",
+    "rating": 4.5
   },
   {
     "id": 11,
@@ -173,7 +183,8 @@
       "Sweat and water resistant (IPX4)"
     ],
     "price": 249,
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MTJV3?wid=1000&hei=1000&fmt=jpeg&qlt=90&.v=1694014871985"
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MTJV3?wid=1000&hei=1000&fmt=jpeg&qlt=90&.v=1694014871985",
+    "rating": 4.8
   },
   {
     "id": 12,
@@ -189,7 +200,8 @@
       "Bluetooth connectivity"
     ],
     "price": 199,
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK2C3?wid=1000&hei=1000&fmt=jpeg&qlt=90&.v=1626396968000"
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK2C3?wid=1000&hei=1000&fmt=jpeg&qlt=90&.v=1626396968000",
+    "rating": 4.4
   },
   {
     "id": 13,
@@ -205,7 +217,8 @@
       "Flex mode for multitasking"
     ],
     "price": 1799,
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/ae/2307/gallery/ae-galaxy-z-fold5-f946-sm-f946bzegmid-534864917?$650_519_PNG$"
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/ae/2307/gallery/ae-galaxy-z-fold5-f946-sm-f946bzegmid-534864917",
+    "rating": 4.3
   },
   {
     "id": 14,
@@ -221,7 +234,8 @@
       "Alert Slider"
     ],
     "price": 799,
-    "image": "https://image.oneplus.net/shop/2023/12/15171315/8c3d1d6c2a3e4c4c8c3d1d6c2a3e4c4c.png"
+    "image": "https://image.oneplus.net/shop/2023/12/15/171315/8c3d1d6c2a3e4c4c8c3d1d6c2a3e4c4c.png",
+    "rating": 4.4
   },
   {
     "id": 15,
@@ -237,7 +251,8 @@
       "Three versatile modes"
     ],
     "price": 1999,
-    "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-Studio-2-01-1?wid=1000&hei=1000&fit=crop"
+    "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-Studio-2-01-1?wid=1000&hei=1000&fit=crop",
+    "rating": 4.5
   },
   {
     "id": 16,
@@ -253,7 +268,8 @@
       "Best-in-class keyboard"
     ],
     "price": 1699,
-    "image": "https://p1-ofp.static.pub/medias/bWFzdGVyfHJvb3R8ODIyNjl8aW1hZ2UvcG5nfGgzOC9oM2MvMTEwMjc0OTg0NTQxNTgvNDUwNTg4NjY1NzE3NzQucG5nfGY2YzE5N2U0YzQ1M2I0YzM1M2QyYzU2YjQ3YzQ2YjQ3YzQ2YjQ3YzQ2YjQ3YzQ2YjQ3YzQ2YjQ3YzQ2Yg==.png"
+    "image": "https://p1-ofp.static.pub/medias/bWFzdGVyfHJvb3R8ODIyNjl8aW1hZ2UvcG5nfGgzOC9oM2MvMTEwMjc0OTg0NTQxNTgvNDUwNTg4NjY1NzE3NzQucG5nfGY2YzE5N2U0YzQ1M2I0YzM1M2QyYzU2YjQ3YzQ2YjQ3YzQ2YjQ3YzQ2YjQ3YzQ2YjQ3YzQ2Yg.png",
+    "rating": 4.6
   },
   {
     "id": 17,
@@ -269,7 +285,8 @@
       "TopoActive maps"
     ],
     "price": 899,
-    "image": "https://www.garmin.com/en-US/p/772416/pn/010-02541-11"
+    "image": "https://www.garmin.com/en-US/p/772416/pn/010-02541-11",
+    "rating": 4.7
   },
   {
     "id": 18,
@@ -285,7 +302,8 @@
       "24/7 heart rate tracking"
     ],
     "price": 159,
-    "image": "https://i.ebayimg.com/images/g/0~sAAOSw2sNk5vVW/s-l1600.jpg"
+    "image": "https://i.ebayimg.com/images/g/0~sAAOSw2sNk5vVW/s-l1600.jpg",
+    "rating": 4.2
   },
   {
     "id": 19,
@@ -301,7 +319,8 @@
       "HDMI port, SDXC card slot"
     ],
     "price": 1599,
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-silver-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230836752"
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-silver-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230836752",
+    "rating": 4.7
   },
   {
     "id": 20,
@@ -317,7 +336,8 @@
       "Works with compatible iPad models"
     ],
     "price": 129,
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MU8F2?wid=1000&hei=1000&fmt=jpeg&qlt=90&.v=1540596406158"
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MU8F2?wid=1000&hei=1000&fmt=jpeg&qlt=90&.v=1540596406158",
+    "rating": 4.6
   },
   {
     "id": 21,
@@ -333,7 +353,8 @@
       "Programmable buttons"
     ],
     "price": 99,
-    "image": "https://resource.logitech.com/w_692,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/mx/products/mx-master-3s/gallery/graphite/mx-master-3s-mouse-top-view-graphite.png"
+    "image": "https://resource.logitech.com/w_692,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/mx/products/mx-master-3s/gallery/graphite/mx-master-3s-mouse-top-view-graphite.png",
+    "rating": 4.7
   },
   {
     "id": 22,
@@ -349,7 +370,8 @@
       "Under-display front camera"
     ],
     "price": 1199,
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/ae/230726/gallery/ae-galaxy-tab-s9-ultra-sm-x910nzamea-thumb-534864921?$650_519_PNG$"
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/ae/230726/gallery/ae-galaxy-tab-s9-ultra-sm-x910nzamea-thumb-534864921",
+    "rating": 4.5
   },
   {
     "id": 23,
@@ -365,7 +387,8 @@
       "ProMotion technology"
     ],
     "price": 1099,
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-finish-select-202212-12-9inch-spacegray-wifi_FMT_WHH?wid=1000&hei=1000&fmt=jpeg&qlt=90&.v=1671143321213"
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-finish-select-202212-12-9inch-spacegray-wifi_FMT_WHH?wid=1000&hei=1000&fmt=jpeg&qlt=90&.v=1671143321213",
+    "rating": 4.7
   },
   {
     "id": 24,
@@ -381,7 +404,8 @@
       "Smaller 30% reduction in volume"
     ],
     "price": 499,
-    "image": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-product-thumbnail-01-en-23oct23$?1600px-800px$"
+    "image": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-product-thumbnail-01-en-23oct23$?1600px-800px$",
+    "rating": 4.8
   },
   {
     "id": 25,
@@ -397,7 +421,8 @@
       "Xbox Game Pass support"
     ],
     "price": 499,
-    "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4mRni?w=1000&h=1000&fit=crop"
+    "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4mRni?w=1000&h=1000&fit=crop",
+    "rating": 4.7
   },
   {
     "id": 26,
@@ -413,7 +438,8 @@
       "HD Rumble"
     ],
     "price": 349,
-    "image": "https://assets.nintendo.com/image/upload/c_fill,w_1000/q_auto:best/f_auto/dpr_1.0/ncom/en_US/switch/site-design-update/switch-oled-model-white"
+    "image": "https://assets.nintendo.com/image/upload/c_fill,w_1000/q_auto:best/f_auto/dpr_1.0/ncom/en_US/switch/site-design-update/switch-oled-model-white",
+    "rating": 4.6
   },
   {
     "id": 27,
@@ -429,7 +455,8 @@
       "Touch Plus controllers"
     ],
     "price": 499,
-    "image": "https://cdn.meta.com/quest/assets/quest-hero-md-9f88dfd6a5d2c2c1.png"
+    "image": "https://cdn.meta.com/quest/assets/quest-hero-md-9f88dfd6a5d2c2c1.png",
+    "rating": 4.4
   },
   {
     "id": 28,
@@ -445,7 +472,8 @@
       "GameDAC Gen 2"
     ],
     "price": 349,
-    "image": "https://cdn.steelseries.com/images/products/arctis-nova-pro-wireless/arctis-nova-pro-wireless-gallery-1.png"
+    "image": "https://cdn.steelseries.com/images/products/arctis-nova-pro-wireless/arctis-nova-pro-wireless-gallery-1.png",
+    "rating": 4.6
   },
   {
     "id": 29,
@@ -461,7 +489,8 @@
       "Dual USB passthrough"
     ],
     "price": 199,
-    "image": "https://assets2.razerzone.com/images/blackwidow-v4-pro/blackwidow-v4-pro-1.png"
+    "image": "https://assets2.razerzone.com/images/blackwidow-v4-pro/blackwidow-v4-pro-1.png",
+    "rating": 4.5
   },
   {
     "id": 30,
@@ -477,7 +506,8 @@
       "LCD screen with performance data"
     ],
     "price": 749,
-    "image": "https://www.dyson.com/dam/jcr:5d9b0958-6b8b-4d5a-bc8e-3d2d4e7b4b6a/404780-01.png"
+    "image": "https://www.dyson.com/dam/jcr:5d9b0958-6b8b-4d5a-bc8e-3d2d4e7b4b6a/404780-01.png",
+    "rating": 4.7
   },
   {
     "id": 31,
@@ -493,7 +523,8 @@
       "Geofencing support"
     ],
     "price": 199,
-    "image": "https://www.philips-hue.com/content/dam/hue/masters/products/indoor-lights/hue-white-and-color-ambiance-e27/8719514345145.png"
+    "image": "https://www.philips-hue.com/content/dam/hue/masters/products/indoor-lights/hue-white-and-color-ambiance-e27/8719514345145.png",
+    "rating": 4.5
   },
   {
     "id": 32,
@@ -509,7 +540,8 @@
       "Streaming video support"
     ],
     "price": 99,
-    "image": "https://lh3.googleusercontent.com/drive-viewer/AKGpihbLh7fQ3f3Qx6Qf3QY6Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q=w1000"
+    "image": "https://lh3.googleusercontent.com/drive-viewer/AKGpihbLh7fQ3f3Qx6Qf3QY6Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q3Q=w1000",
+    "rating": 4.3
   },
   {
     "id": 33,
@@ -525,7 +557,8 @@
       "Bluetooth connectivity"
     ],
     "price": 59,
-    "image": "https://m.media-amazon.com/images/I/71N--M-9g2L._AC_SL1500_.jpg"
+    "image": "https://m.media-amazon.com/images/I/71N--M-9g2L._AC_SL1500_.jpg",
+    "rating": 4.4
   },
   {
     "id": 34,
@@ -541,7 +574,8 @@
       "Carpet detection"
     ],
     "price": 1599,
-    "image": "https://cdn.roborock.com/www/global/upload/image/20230309/1678343808845113.png"
+    "image": "https://cdn.roborock.com/www/global/upload/image/20230309/1678343808845113.png",
+    "rating": 4.8
   },
   {
     "id": 35,
@@ -557,7 +591,8 @@
       "180-degree field of view"
     ],
     "price": 199,
-    "image": "https://www.arlo.com/content/dam/arlo/assets/devices/pro-4/pro4-camera-kit/pro4-camera-kit-angle.png"
+    "image": "https://www.arlo.com/content/dam/arlo/assets/devices/pro-4/pro4-camera-kit/pro4-camera-kit-angle.png",
+    "rating": 4.4
   },
   {
     "id": 36,
@@ -573,7 +608,8 @@
       "Color Night Vision"
     ],
     "price": 249,
-    "image": "https://m.media-amazon.com/images/I/61YVqHdFRxL._AC_SL1500_.jpg"
+    "image": "https://m.media-amazon.com/images/I/61YVqHdFRxL._AC_SL1500_.jpg",
+    "rating": 4.5
   },
   {
     "id": 37,
@@ -589,7 +625,8 @@
       "Touch controls"
     ],
     "price": 199,
-    "image": "https://nanoleaf-us-en.s3.amazonaws.com/2021/10/Lines-9-Pack-1.png"
+    "image": "https://nanoleaf-us-en.s3.amazonaws.com/2021/10/Lines-9-Pack-1.png",
+    "rating": 4.3
   },
   {
     "id": 38,
@@ -605,7 +642,8 @@
       "Timecode sync for multi-cam"
     ],
     "price": 399,
-    "image": "https://gopro.com/assets/images/hero12-black/detail-page/gopro-hero12-black-01.png"
+    "image": "https://gopro.com/assets/images/hero12-black/detail-page/gopro-hero12-black-01.png",
+    "rating": 4.6
   },
   {
     "id": 39,
@@ -621,7 +659,8 @@
       "Real-time Eye AF"
     ],
     "price": 499,
-    "image": "https://electronics.sony.com/image/4c9c8b8e8b8e8b8e8b8e8b8e8b8e8b8e"
+    "image": "https://electronics.sony.com/image/4c9c8b8e8b8e8b8e8b8e8b8e8b8e8b8e",
+    "rating": 4.4
   },
   {
     "id": 40,
@@ -637,7 +676,8 @@
       "MasterShots automated filming"
     ],
     "price": 759,
-    "image": "https://www.dji.com/-/media/dji-images/product/mini-4-pro/accessories/rc_2_1_750x750.jpg"
+    "image": "https://www.dji.com/-/media/dji-images/product/mini-4-pro/accessories/rc_2_1_750x750.jpg",
+    "rating": 4.7
   },
   {
     "id": 41,
@@ -653,7 +693,8 @@
       "Dual SD card slots"
     ],
     "price": 1699,
-    "image": "https://fujifilm-x.com/wp-content/uploads/2022/11/x-t5_001.png"
+    "image": "https://fujifilm-x.com/wp-content/uploads/2022/11/x-t5_001.png",
+    "rating": 4.8
   },
   {
     "id": 42,
@@ -669,7 +710,8 @@
       "Weather-sealed body"
     ],
     "price": 2499,
-    "image": "https://cdn-4.nikon-cdn.com/e/Q5NM96RZZo-YRYNeYvAi9beHK4x3L-8u4cQXS3gGXIAgT51q5U5gUQ==/Views/27172_Z9_Front_Right_Studio.png"
+    "image": "https://cdn-4.nikon-cdn.com/e/Q5NM96RZZo-YRYNeYvAi9beHK4x3L-8u4cQXS3gGXIAgT51q5U5gUQ==/Views/27172_Z9_Front_Right_Studio.png",
+    "rating": 4.7
   },
   {
     "id": 43,
@@ -685,7 +727,8 @@
       "Bluetooth audiobook support"
     ],
     "price": 139,
-    "image": "https://m.media-amazon.com/images/I/61X+3uS1fSL._AC_SL1000_.jpg"
+    "image": "https://m.media-amazon.com/images/I/61X+3uS1fSL._AC_SL1000_.jpg",
+    "rating": 4.6
   },
   {
     "id": 44,
@@ -701,7 +744,8 @@
       "Export notes via email"
     ],
     "price": 339,
-    "image": "https://m.media-amazon.com/images/I/61L1ItFgFDL._AC_SL1500_.jpg"
+    "image": "https://m.media-amazon.com/images/I/61L1ItFgFDL._AC_SL1500_.jpg",
+    "rating": 4.4
   },
   {
     "id": 45,
@@ -717,7 +761,8 @@
       "OverDrive library integration"
     ],
     "price": 179,
-    "image": "https://www.kobo.com/static/images/devices/libra2/black-front.png"
+    "image": "https://www.kobo.com/static/images/devices/libra2/black-front.png",
+    "rating": 4.3
   },
   {
     "id": 46,
@@ -733,7 +778,8 @@
       "2 USB-C, 1 USB-A ports"
     ],
     "price": 129,
-    "image": "https://m.media-amazon.com/images/I/61frKCFsGaL._AC_SL1500_.jpg"
+    "image": "https://m.media-amazon.com/images/I/61frKCFsGaL._AC_SL1500_.jpg",
+    "rating": 4.5
   },
   {
     "id": 47,
@@ -749,7 +795,8 @@
       "3-year limited warranty"
     ],
     "price": 149,
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/2204/gallery/uk-ssd-t7-shield-2tb-533244799?$216_172_PNG$"
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/2204/gallery/uk-ssd-t7-shield-2tb-533244799",
+    "rating": 4.7
   },
   {
     "id": 48,
@@ -765,7 +812,8 @@
       "Compact form factor"
     ],
     "price": 69,
-    "image": "https://hypershop.com/cdn/shop/products/DOCK465_1_1024x1024.png"
+    "image": "https://hypershop.com/cdn/shop/products/DOCK465_1_1024x1024.png",
+    "rating": 4.4
   },
   {
     "id": 49,
@@ -781,7 +829,8 @@
       "USB-C connectivity"
     ],
     "price": 159,
-    "image": "https://www.elgato.com/sites/default/files/2021-06/wave3-product-image-01.png"
+    "image": "https://www.elgato.com/sites/default/files/2021-06/wave3-product-image-01.png",
+    "rating": 4.6
   },
   {
     "id": 50,
@@ -797,7 +846,8 @@
       "Headphone volume control"
     ],
     "price": 169,
-    "image": "https://cdn.rode.com/images/database/products/microphones/nt-usb-plus/images/nt-usb-plus-01-front-1000x1000.png"
+    "image": "https://cdn.rode.com/images/database/products/microphones/nt-usb-plus/images/nt-usb-plus-01-front-1000x1000.png",
+    "rating": 4.5
   },
   {
     "id": 51,
@@ -813,7 +863,8 @@
       "HD autofocus"
     ],
     "price": 69,
-    "image": "https://resource.logitech.com/w_692,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/products/webcams/c920x-hd-pro-webcam/gallery/c920x-hd-pro-webcam-gallery-1.png"
+    "image": "https://resource.logitech.com/w_692,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/products/webcams/c920x-hd-pro-webcam/gallery/c920x-hd-pro-webcam-gallery-1.png",
+    "rating": 4.5
   },
   {
     "id": 52,
@@ -829,7 +880,8 @@
       "Desktop stand included"
     ],
     "price": 99,
-    "image": "https://www.bluedesigns.com/images/products/yeti-nano/hero/yeti-nano-blackout.png"
+    "image": "https://www.bluedesigns.com/images/products/yeti-nano/hero/yeti-nano-blackout.png",
+    "rating": 4.4
   },
   {
     "id": 53,
@@ -845,7 +897,8 @@
       "Mac/Windows compatible"
     ],
     "price": 84,
-    "image": "https://cdn.shopify.com/s/files/1/0059/0630/9207/products/K2Pro-1_1200x1200.jpg"
+    "image": "https://cdn.shopify.com/s/files/1/0059/0630/9207/products/K2Pro-1_1200x1200.jpg",
+    "rating": 4.6
   },
   {
     "id": 54,
@@ -861,7 +914,8 @@
       "Google Assistant/Alexa built-in"
     ],
     "price": 429,
-    "image": "https://assets.bose.com/content/dam/cloudassets/Bose_DAM/Web/consumer_electronics/global/products/headphones/qc_ultra_headphones/product_silo_images/QC_Ultra_Headphones_Black_EC_01.psd/jcr:content/renditions/cq5dam.web.1000.1000.png"
+    "image": "https://assets.bose.com/content/dam/cloudassets/Bose_DAM/Web/consumer_electronics/global/products/headphones/qc_ultra_headphones/product_silo_images/QC_Ultra_Headphones_Black_EC_01.psd/jcr:content/renditions/cq5dam.web.1000.1000.png",
+    "rating": 4.7
   },
   {
     "id": 55,
@@ -877,7 +931,8 @@
       "Auto NC Optimizer"
     ],
     "price": 399,
-    "image": "https://www.sony.com/image/9c8e8b8e8b8e8b8e8b8e8b8e8b8e8b8e"
+    "image": "https://www.sony.com/image/9c8e8b8e8b8e8b8e8b8e8b8e8b8e8b8e",
+    "rating": 4.8
   },
   {
     "id": 56,
@@ -893,7 +948,8 @@
       "Line-in capability"
     ],
     "price": 249,
-    "image": "https://www.sonos.com/content/dam/sonos/products/era100/black/PD-Era100-Black-1-1-1.png"
+    "image": "https://www.sonos.com/content/dam/sonos/products/era100/black/PD-Era100-Black-1-1-1.png",
+    "rating": 4.5
   },
   {
     "id": 57,
@@ -909,7 +965,8 @@
       "USB-C charging"
     ],
     "price": 129,
-    "image": "https://www.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw5d8d5e1e/JBL_FLIP6_Product%20Image_Hero_Black_Charging.png"
+    "image": "https://www.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw5d8d5e1e/JBL_FLIP6_Product%20Image_Hero_Black_Charging.png",
+    "rating": 4.4
   },
   {
     "id": 58,
@@ -925,7 +982,8 @@
       "HearID Sound personalization"
     ],
     "price": 99,
-    "image": "https://m.media-amazon.com/images/I/61s9a2+4VaL._AC_SL1500_.jpg"
+    "image": "https://m.media-amazon.com/images/I/61s9a2+4VaL._AC_SL1500_.jpg",
+    "rating": 4.3
   },
   {
     "id": 59,
@@ -941,7 +999,8 @@
       "Built-in monitor mix"
     ],
     "price": 249,
-    "image": "https://cdn.shure.com/publication/upload/1515/mv7-product-image-1-1600x1600.png"
+    "image": "https://cdn.shure.com/publication/upload/1515/mv7-product-image-1-1600x1600.png",
+    "rating": 4.7
   },
   {
     "id": 60,
@@ -957,6 +1016,7 @@
       "Find My network support"
     ],
     "price": 99,
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airtag-double-select-202104?wid=1000&hei=1000&fmt=jpeg&qlt=90&.v=1617761672000"
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airtag-double-select-202104?wid=1000&hei=1000&fmt=jpeg&qlt=90&.v=1617761672000",
+    "rating": 4.5
   }
 ]

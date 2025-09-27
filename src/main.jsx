@@ -27,6 +27,8 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>
       },
+
+      // async function is better for fethcing data
       {
         path: "/gadgetdetails/:gadgetId",
         element: <GadgetDetails />,
@@ -39,11 +41,7 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
-        loader: async () => {
-          const res = await fetch('/gadgets.json');
-          const data = await res.json();  // ⬅ parse JSON here
-          return data;
-        }
+
       },
       {
         path: "/statistics",

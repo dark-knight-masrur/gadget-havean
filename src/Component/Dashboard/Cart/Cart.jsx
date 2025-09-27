@@ -1,68 +1,114 @@
-import { FaTrashAlt } from "react-icons/fa";
-import { useCart } from "../../../assets/Utilites/createContext/CartContext";  // Import the hook
+import { FaStar, FaTrashAlt } from "react-icons/fa";
+import { useCart } from "../../../assets/Utilites/createContext/CartContext";
 import { Link } from "react-router-dom";
+import { GiSettingsKnobs } from "react-icons/gi";
+import { useState, useEffect } from "react";
 
 const Cart = () => {
     const { cartItems, removeFromCart, clearCart } = useCart();
+    const [sort, setSort] = useState('');
+    const [sortedItems, setSortedItems] = useState([]);
 
-    const totalPrice = cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
+    // Get enriched items with ratings - safe version
+    const getEnrichedItems = () => {
+        // If cartItems is empty or undefined, return empty array
+        if (!cartItems || cartItems.length === 0) {
+            return [];
+        }
+
+        return cartItems.map(cartItem => {
+            // Just use the rating from cartItem itself (it should be preserved in context)
+            return {
+                ...cartItem,
+                rating: cartItem.rating || 0 // Use the rating that's already in cart item
+            };
+        });
+    };
+
+    // Update sorted items when cart or sort changes
+    useEffect(() => {
+        const enrichedItems = getEnrichedItems();
+
+        if (sort === 'Price') {
+            setSortedItems([...enrichedItems].sort((a, b) => a.price - b.price));
+        } else if (sort === 'Rating') {
+            setSortedItems([...enrichedItems].sort((a, b) => b.rating - a.rating));
+        } else {
+            setSortedItems(enrichedItems);
+        }
+    }, [cartItems, sort]);
+
+    const handleSort = (sortType) => {
+        setSort(sortType);
+    };
+
+    const displayItems = sortedItems.length > 0 ? sortedItems : getEnrichedItems();
+    const totalPrice = displayItems.reduce((total, item) => total + (item.price * item.quantity), 0);
 
     return (
-        // when its remain empty 
-        <div className="p-6 w-11/12 mx-auto ">
+        <div className="p-6 md:w-11/12 mx-auto ">
             <h2 className="text-2xl font-bold mb-4 text-center">Your Shopping Cart</h2>
-            <h1 className="text-xl font-bold mb-4 text-center">Total items is: {cartItems.length}</h1>
+            <h1 className="text-xl font-bold mb-4 text-center">Total items is: {cartItems?.length || 0}</h1>
 
-            {/* if empty cart */}
-            {cartItems.length === 0 ? (
+            {cartItems && cartItems.length > 0 && (
+                <div className="justify-center md:justify-end flex gap-5 mb-6">
+                    <div className="dropdown">
+                        <div tabIndex={0} role="button" className="btn broder bg-[#9538E2] hover:bg-transparent hover:border-[#9538E2] hover:text-[#9538E2] text-white rounded-full">
+                            {sort ? `sort by ${sort}` : 'sort'}
+                            <GiSettingsKnobs className=" w-5 h-5" />
+                        </div>
+                        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                            <li onClick={() => handleSort('Price')}><a>Price</a></li>
+                            <li onClick={() => handleSort('Rating')}><a>Rating</a></li>
+                            <li onClick={() => handleSort('')}><a>Clear Sort</a></li>
+                        </ul>
+                    </div>
+
+                    <button className="btn broder bg-[#9538E2] hover:bg-transparent hover:border-[#9538E2] hover:text-[#9538E2] text-white rounded-full">Purchase</button>
+                </div>
+            )}
+
+            {displayItems.length === 0 ? (
                 <div className="text-center">
                     <p className=" text-xl my-8">Your cart is empty</p>
-
-                    {/* Continue shopping button  */}
                     <Link to={'/'}>
-                        <button
-                            className="btn broder border-[#9538E2] animate-bounce hover:bg-[#9538E2]  text-[#9538E2] hover:text-white rounded-full"
-                        >
+                        <button className="btn broder border-[#9538E2] animate-bounce hover:bg-[#9538E2] text-[#9538E2] hover:text-white rounded-full">
                             Continue Shopping
-                        </button></Link>
+                        </button>
+                    </Link>
                 </div>
-
             ) : (
                 <div>
-                    {/* if any any product added  */}
-                    {cartItems.map(item => (
-                        // cart product details 
-                        <div key={item.id} className="flex items-center justify-between my-10 py-4">
-                            <div className="flex items-center gap-5">
+                    {displayItems.map(item => (
+                        <div key={item.id} className="md:flex max-sm:space-y-4 items-center justify-between my-10 py-4">
+                            <div className="md:flex items-center gap-5">
                                 <img src={item.image} alt={item.name} className="w-40 h-24 object-contain mr-4" />
                                 <div className="space-y-4">
                                     <h3 className="font-bold text-2xl">{item.name}</h3>
-                                    <p className="">${item.details} </p>
+                                    <p className="">{item.details} </p>
                                     <p className="text-xl font-semibold">$: {item.price} x {item.quantity}</p>
+                                    <div className="inline-flex items-center gap-1">
+                                        Your Rating: {item.rating || 'No rating'}
+                                    </div>
                                 </div>
                             </div>
 
-                            {/* remove icon button  */}
                             <button
                                 onClick={() => removeFromCart(item.id)}
                                 className="text-red-500 hover:text-red-700"
                             >
                                 <FaTrashAlt className="w-5 h-7" />
-
                             </button>
                         </div>
                     ))}
 
-                    {/* bottom section: total price, continue shopping and clear cart button  */}
-                    <div className="mt-4 flex justify-between items-center">
+                    <div className="mt-4 md:flex justify-between items-center max-sm:space-x-4 max-sm:space-y-5">
                         <h3 className="text-xl font-bold">Total: ${totalPrice.toFixed(2)}</h3>
-
                         <Link to={'/'}>
-                            <button
-                                className="btn broder border-[#9538E2] animate-bounce hover:bg-[#9538E2]  text-[#9538E2] hover:text-white rounded-full"
-                            >
+                            <button className="btn broder border-[#9538E2] animate-bounce hover:bg-[#9538E2] text-[#9538E2] hover:text-white rounded-full">
                                 Continue Shopping
-                            </button></Link>
+                            </button>
+                        </Link>
                         <button
                             onClick={clearCart}
                             className="hover:bg-red-500 hover:text-white px-4 py-2 rounded-full text-red-600 animate-pulse border border-red-600"

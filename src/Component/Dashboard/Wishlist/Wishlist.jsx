@@ -60,9 +60,9 @@ const Wishlist = () => {
                     const itemQuantity = getItemQuantity(item.id); //  item.id instead of id to avoid confiction
 
                     return (
-                        <div key={item.id} className="flex items-center justify-between  pb-6">
+                        <div key={item.id} className="md:flex max-sm:space-y-3 items-center justify-between  pb-6">
                             {/* Product details */}
-                            <div className="flex items-center gap-5 flex-1">
+                            <div className="md:flex items-center gap-5 flex-1">
                                 <img
                                     src={item.image}
                                     alt={item.name}
@@ -106,7 +106,7 @@ const Wishlist = () => {
                 })}
 
                 {/* all Total and Clear Button */}
-                <div className="mt-6 flex justify-between items-center  pt-4">
+                <div className="mt-6 md:flex justify-between items-center  pt-4 max-sm:space-x-4 max-sm:space-y-5">
                     <h3 className="text-xl font-bold">Total: ${totalPrice.toFixed(2)}</h3>
 
                     <Link to={'/'}>

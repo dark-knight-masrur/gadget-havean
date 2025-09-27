@@ -8,7 +8,7 @@ const Featured = () => {
 
 
             {/* Image Section */}
-            <div className="w-full mx-auto md:w-7/12 lg:w-5/12  relative flex items-center justify-center px-6  md:px-10 ">
+            <div className="w-11/12 mx-auto md:w-7/12 lg:w-5/12  relative flex items-center justify-center px-6  md:px-10 ">
                 <div className="absolute -top-20 ">
                     {/* Main floating image */}
                     <img

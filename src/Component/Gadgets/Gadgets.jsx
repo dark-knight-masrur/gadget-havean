@@ -29,11 +29,11 @@ const Gadgets = () => {
     }, [])
 
     return (
-        <div className="mt-96" id="GadetsSection">
-            <h1 className="font-bold text-3xl text-center py-20">Explore Cutting-Edge Gadgets</h1>
-            <div className="mx-auto md:w-10/12 md:flex  gap-10 ">
+        <div className="mt-52 lg:mt-96" id="GadetsSection">
+            <h1 className="font-bold text-2xl md:text-3xl text-center py-5 md:py-20">Explore Cutting-Edge Gadgets</h1>
+            <div className="mx-auto lg:w-10/12 md:flex  gap-10 max-sm:space-y-3">
 
-                <div className="card  w-56 shadow-sm h-[50vh] p-10 space-y-5">
+                <div className="card   w-full md:w-56 shadow-sm md:h-[80vh] md:p-10 md:space-y-5 max-sm:grid max-sm:gap-3 grid-cols-3 ">
                     {buttons}
 
                 </div>

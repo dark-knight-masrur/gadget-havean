@@ -25,7 +25,7 @@ const Navbar = () => {
     const wishCount = wishItems.reduce((total, item) => total + item.quantity, 0);
 
     return (
-        <div className="navbar px-15 py-10 ">
+        <div className="navbar md:px-15 py-10 ">
             <div className=" navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

@@ -37,7 +37,7 @@ const Gadget = ({ gadget }) => {
 
 
     return (
-        <div className="card  w-96 shadow-sm">
+        <div className="card   shadow-sm">
 
             {/* image section  */}
             <figure className="bg-[#D9D9D9] p-5 m-5 rounded-2xl h-[30vh] md:h-[20vh]">

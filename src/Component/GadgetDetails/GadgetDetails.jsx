@@ -69,7 +69,7 @@ const GadgetDetails = () => {
     return (
         <div>
             {/* Hero section */}
-            <div className="hero min-h-[60vh] pb-10 md:w-11/12 mx-auto -mt-1 bg-[#9538E2] shadow-sm border border-x-amber-500 text-white">
+            <div className="hero md:min-h-[60vh] pb-10 md:w-11/12 mx-auto -mt-1 bg-[#9538E2] shadow-sm border border-x-amber-500 text-white">
                 <div className="hero-content text-center">
                     <div className="md:w-11/12 space-y-4">
                         <h1 className="text-2xl md:text-xl lg:text-5xl font-bold mx-auto">Product Details Section</h1>
@@ -81,9 +81,9 @@ const GadgetDetails = () => {
             </div>
 
             {/* Product details */}
-            <div className="mx-auto px-4 py-20 md:py-25">
-                <div className="w-full mx-auto md:w-7/12 floating relative md:flex items-center justify-center p-6 lg:p-10">
-                    <div className="absolute -top-50 bg-white">
+            <div className="mx-auto px-4 py-20 md:py-25 ">
+                <div className="w-11/12 mx-auto md:w-7/12 floating relative md:flex items-center justify-center p-6 lg:p-10 mb-96 lg:mb-52">
+                    <div className="absolute -top-35 md:-top-52 bg-white">
                         <div className="hero rounded-2xl shadow-2xl w-full">
                             <div className="hero-content flex-col lg:flex-row px-10 lg:gap-15">
 
@@ -97,11 +97,11 @@ const GadgetDetails = () => {
                                 </figure>
 
                                 <div className='lg:w-7/12 space-y-3'>
-                                    <h1 className="text-xl font-bold">{gadget.name}</h1>
-                                    <p className="py-6 font-bold text-xl">$: {gadget.price}</p>
+                                    <h1 className="md:text-xl font-bold">{gadget.name}</h1>
+                                    <p className="lg:py-6 font-bold md:text-xl">$: {gadget.price}</p>
                                     <span className='btn border border-green-400 rounded-full'>In Stock</span>
-                                    <p className='font-bold'>{gadget.details}</p>
-                                    <ol className='list-decimal space-y-3'>
+                                    <p className='font-bold max-sm:text-xs text-justify'>{gadget.details}</p>
+                                    <ol className='list-decimal text-xs lg:text-base space-y-3'>
                                         {gadget.specifications.map((specification, i) => (
                                             <li key={i}>{specification}</li>
                                         ))}
@@ -110,18 +110,21 @@ const GadgetDetails = () => {
                                     {/* Rating */}
                                     <p className='inline-flex items-center gap-1'>Your Rating <FaStar /> </p>
                                     <br />
-                                    <div className="rating rating-lg rating-half">
-                                        <input type="radio" name="rating-11" className="rating-hidden" />
-                                        <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-1 bg-amber-400" aria-label="0.5 star" />
-                                        <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-2 bg-amber-400" aria-label="1 star" />
-                                        <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-1 bg-amber-400" aria-label="1.5 star" defaultChecked />
-                                        <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-2 bg-amber-400" aria-label="2 star" />
-                                        <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-1 bg-amber-400" aria-label="2.5 star" />
-                                        <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-2 bg-amber-400" aria-label="3 star" />
-                                        <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-1 bg-amber-400" aria-label="3.5 star" />
-                                        <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-2 bg-amber-400" aria-label="4 star" />
-                                        <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-1 bg-amber-400" aria-label="4.5 star" />
-                                        <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-2 bg-amber-400" aria-label="5 star" />
+                                    <div className='flex gap-3'>
+                                        <div className="rating rating-lg rating-half">
+                                            <input type="radio" name="rating-11" className="rating-hidden" />
+                                            <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-1 bg-amber-400" aria-label="0.5 star" />
+                                            <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-2 bg-amber-400" aria-label="1 star" />
+                                            <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-1 bg-amber-400" aria-label="1.5 star" defaultChecked />
+                                            <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-2 bg-amber-400" aria-label="2 star" />
+                                            <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-1 bg-amber-400" aria-label="2.5 star" />
+                                            <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-2 bg-amber-400" aria-label="3 star" />
+                                            <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-1 bg-amber-400" aria-label="3.5 star" />
+                                            <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-2 bg-amber-400" aria-label="4 star" />
+                                            <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-1 bg-amber-400" aria-label="4.5 star" />
+                                            <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-2 bg-amber-400" aria-label="5 star" />
+                                        </div>
+                                        <p className='text-xl font-semibold'>{gadget.rating}</p>
                                     </div>
 
                                     {/* Cart product info that show how many produt added */}

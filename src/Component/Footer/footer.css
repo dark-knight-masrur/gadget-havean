@@ -1,0 +1,16 @@
+a {
+    color: rgb(143, 142, 142);
+
+}
+
+h6 {
+    color: black;
+    font: bold;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

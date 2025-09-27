@@ -1,3 +1,5 @@
+/* imported button class from https://dev.to/webdeasy/top-20-css-buttons-animations-f41 */
+
 .btn-1 {
 
     padding: 30px 25px;
@@ -11,7 +13,6 @@
     z-index: 1;
     background-color: white;
     box-shadow: rgba(244, 243, 243, 0.35) 0px 5px 15px;
-    /* Replace with your color */
 }
 
 .btn-1::after {
@@ -22,7 +23,6 @@
     width: 100%;
     height: 100%;
     background-color: white;
-    /* Replace with your color */
 
     z-index: -2;
 }

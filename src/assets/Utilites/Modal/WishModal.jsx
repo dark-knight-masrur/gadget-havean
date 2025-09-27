@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useWish } from "../createContext/WishContext";
 
 
-// WishModal.jsx (Separate component is more usefull)
 const WishModal = ({ isOpen, onClose, gadget, }) => {
     const { wishItems } = useWish();
     const WishCount = wishItems.reduce((total, item) => total + item.quantity, 0);

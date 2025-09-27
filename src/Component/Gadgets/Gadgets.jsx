@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Gadget from "./Gadget";
 
 const Gadgets = () => {
+
+    //daynamic button secttion 
     const buttons =
         <>
             <button className="btn broder border-[#9538E2] hover:bg-[#9538E2]  text-[#9538E2] hover:text-white rounded-full">All product</button>
@@ -13,7 +15,7 @@ const Gadgets = () => {
             <button className="btn broder border-[#9538E2] hover:bg-[#9538E2]  text-[#9538E2] hover:text-white rounded-full">Iphone</button>
         </>
 
-
+    //fetch data from server
     const [gadgets, setGadgets] = useState([])
     useEffect(() => {
         fetch('gadgets.json')
@@ -25,6 +27,7 @@ const Gadgets = () => {
             )
 
     }, [])
+
     return (
         <div className="mt-96" id="GadetsSection">
             <h1 className="font-bold text-3xl text-center py-20">Explore Cutting-Edge Gadgets</h1>
@@ -34,6 +37,7 @@ const Gadgets = () => {
                     {buttons}
 
                 </div>
+                {/* map the data for each product and distructure to Gadget component  */}
                 <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3 ">
                     {gadgets.map((gadget, index) => <Gadget index={index} key={gadget.id} gadget={gadget}></Gadget>)}
 

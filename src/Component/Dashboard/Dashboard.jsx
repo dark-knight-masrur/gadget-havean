@@ -16,7 +16,6 @@ const Dashboard = () => {
                             Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
                         </p>
                         {/* button section  */}
-
                         <div className={"space-x-3 "}>
                             <button onClick={() => setActive('cart')} className={`btn btn-1 rounded-full ${active === 'cart' ? 'active' : ''}`}>Cart</button>
                             <button onClick={() => setActive('wishlist')} className={`btn btn-1 rounded-full ${active === 'wishlist' ? 'active' : ''}`}>Wishlist</button>
@@ -27,8 +26,9 @@ const Dashboard = () => {
 
             </div>
 
+
+            {/* Conditional rendering */}
             <div className='w-9/12 mx-auto'>
-                {/* Conditional rendering */}
                 {active === 'wishlist' ? <Wishlist /> : <Cart />}
 
             </div>

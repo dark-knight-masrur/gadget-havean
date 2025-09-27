@@ -38,7 +38,7 @@ const Featured = () => {
                 </div>
             </div>
 
-            {/* Add Font Awesome for icons */}
+            {/* Add Font Awesome for icons(i didn't find the icon in react icon thats why i used it) */}
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         </div>
 

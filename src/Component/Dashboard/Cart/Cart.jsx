@@ -8,14 +8,17 @@ const Cart = () => {
     const totalPrice = cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
 
     return (
+        // when its remain empty 
         <div className="p-6 w-11/12 mx-auto ">
             <h2 className="text-2xl font-bold mb-4 text-center">Your Shopping Cart</h2>
             <h1 className="text-xl font-bold mb-4 text-center">Total items is: {cartItems.length}</h1>
 
-
+            {/* if empty cart */}
             {cartItems.length === 0 ? (
                 <div className="text-center">
                     <p className=" text-xl my-8">Your cart is empty</p>
+
+                    {/* Continue shopping button  */}
                     <Link to={'/'}>
                         <button
                             className="btn broder border-[#9538E2] animate-bounce hover:bg-[#9538E2]  text-[#9538E2] hover:text-white rounded-full"
@@ -26,9 +29,9 @@ const Cart = () => {
 
             ) : (
                 <div>
-
+                    {/* if any any product added  */}
                     {cartItems.map(item => (
-
+                        // cart product details 
                         <div key={item.id} className="flex items-center justify-between my-10 py-4">
                             <div className="flex items-center gap-5">
                                 <img src={item.image} alt={item.name} className="w-40 h-24 object-contain mr-4" />
@@ -38,6 +41,8 @@ const Cart = () => {
                                     <p className="text-xl font-semibold">$: {item.price} x {item.quantity}</p>
                                 </div>
                             </div>
+
+                            {/* remove icon button  */}
                             <button
                                 onClick={() => removeFromCart(item.id)}
                                 className="text-red-500 hover:text-red-700"
@@ -48,6 +53,7 @@ const Cart = () => {
                         </div>
                     ))}
 
+                    {/* bottom section: total price, continue shopping and clear cart button  */}
                     <div className="mt-4 flex justify-between items-center">
                         <h3 className="text-xl font-bold">Total: ${totalPrice.toFixed(2)}</h3>
 

@@ -9,23 +9,31 @@ import CartModal from '../../assets/Utilites/Modal/Modal';
 import WishModal from '../../assets/Utilites/Modal/WishModal';
 
 const GadgetDetails = () => {
+
+    //getting data from server
     const { gadgetId } = useParams();
     const data = useLoaderData();
     const id = parseInt(gadgetId);
+
+    // adding product in cart and wish list state state 
     const [addToCart, setAddToCart] = useState(false);
     const [addToWish, setAddToWish] = useState(false);
     const { addToCart: addToCartContext, isInCart, getItemQuantity } = useCart();
     const { addToWish: addToWishContext, isInWish, wishGetItemQuantity } = useWish();
+
+    //cart and wish modal showing state
     const [showModal, setShowModal] = useState(false);
     const [wishModal, setWishModal] = useState(false);
 
-
+    //the variable for getting exact data
     const gadget = data.find(gadget => gadget.id === id);
 
+    //if the site crash it will show no gadget
     if (!gadget) {
         return <div>Gadget not found!</div>;
     }
 
+    //getting real time cart and wishlist's exact product 
     const itemQuantity = getItemQuantity(id);
     const wishItemQuantity = wishGetItemQuantity(id);
 
@@ -50,6 +58,7 @@ const GadgetDetails = () => {
         addToWishContext(gadget);
     };
 
+    // closing function for cart and wishlist
     const closeModal = () => {
         setShowModal(false);
     };
@@ -77,6 +86,8 @@ const GadgetDetails = () => {
                     <div className="absolute -top-50 bg-white">
                         <div className="hero rounded-2xl shadow-2xl w-full">
                             <div className="hero-content flex-col lg:flex-row px-10 lg:gap-15">
+
+                                {/* //product image  */}
                                 <figure className='lg:w-5/12'>
                                     <img
                                         src={gadget.image}
@@ -84,6 +95,7 @@ const GadgetDetails = () => {
                                         className="object-fit rounded-lg"
                                     />
                                 </figure>
+
                                 <div className='lg:w-7/12 space-y-3'>
                                     <h1 className="text-xl font-bold">{gadget.name}</h1>
                                     <p className="py-6 font-bold text-xl">$: {gadget.price}</p>
@@ -112,13 +124,14 @@ const GadgetDetails = () => {
                                         <input type="radio" name="rating-11" className="mask mask-star-2 mask-half-2 bg-amber-400" aria-label="5 star" />
                                     </div>
 
-                                    {/* Cart info */}
+                                    {/* Cart product info that show how many produt added */}
                                     {isInCart(id) && (
                                         <p className="text-green-600 font-semibold">
                                             In cart: {itemQuantity} item{itemQuantity > 1 ? 's' : ''}
                                         </p>
                                     )}
 
+                                    {/* wishlist product info that show how many produt added */}
                                     {isInWish(id) && (
                                         <p className="text-pink-600 font-semibold"> {/* Changed color for distinction */}
                                             In wishlist: {wishItemQuantity} item{wishItemQuantity > 1 ? 's' : ''}
@@ -137,6 +150,8 @@ const GadgetDetails = () => {
                                                 </>
                                             )}
                                         </button>
+
+                                        {/* wish button  */}
                                         <button
                                             onClick={handleWish}
                                             className="btn broder border-gray-500 hover:bg-[#9538E2] hover:text-white text-gray-500 rounded-full">
@@ -149,6 +164,7 @@ const GadgetDetails = () => {
                                             )}
 
                                         </button>
+
                                     </div>
                                 </div>
                             </div>
@@ -177,6 +193,7 @@ const GadgetDetails = () => {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
             </div>
 
+            {/* this is custom hook distructuring system for cart and wish list  */}
             <CartModal
                 isOpen={showModal}
                 onClose={closeModal}

@@ -15,10 +15,10 @@ const Wishlist = () => {
 
     const totalPrice = wishItems.reduce((total, item) => total + (item.price * item.quantity), 0);
 
-    // Add to cart function - FIXED
+    // Add to cart function
     const handleCart = (gadget) => {
         addToCartContext(gadget);
-        setSelectedGadget(gadget); // ✅ Set the gadget that was added
+        setSelectedGadget(gadget); //  Set the gadget that was added
         setShowModal(true);
 
         // Auto-close after 3 seconds
@@ -32,6 +32,8 @@ const Wishlist = () => {
 
     if (wishItems.length === 0) {
         return (
+
+            // if cart is empty 
             <div className="p-6 w-11/12 mx-auto text-center">
                 <h2 className="text-2xl font-bold mb-4">Your Shopping Wishlist</h2>
                 <h1 className="text-xl font-bold mb-4 text-center">Total Wish items is: {wishItems.length}</h1>
@@ -48,17 +50,18 @@ const Wishlist = () => {
     }
 
     return (
+        //if anay product added 
         <div className="p-6 w-11/12 mx-auto">
             <h2 className="text-2xl font-bold mb-4">Your Shopping Wishlist</h2>
             <h3 className="text-xl font-bold mb-4">Total items: {wishItems.length}</h3>
 
             <div className="space-y-6">
                 {wishItems.map(item => {
-                    const itemQuantity = getItemQuantity(item.id); // ✅ Use item.id instead of id
+                    const itemQuantity = getItemQuantity(item.id); //  item.id instead of id to avoid confiction
 
                     return (
                         <div key={item.id} className="flex items-center justify-between  pb-6">
-                            {/* Product Info */}
+                            {/* Product details */}
                             <div className="flex items-center gap-5 flex-1">
                                 <img
                                     src={item.image}
@@ -70,7 +73,7 @@ const Wishlist = () => {
                                     <p className="text-gray-600">{item.details}</p>
                                     <p className="text-lg font-semibold">${item.price} x {item.quantity}</p>
 
-                                    {/* Cart info for this specific item */}
+                                    {/* Cart information for this specific item */}
                                     {isInCart(item.id) && (
                                         <p className="text-green-600 font-semibold">
                                             In cart: {itemQuantity} item{itemQuantity > 1 ? 's' : ''}
@@ -90,8 +93,6 @@ const Wishlist = () => {
                                 </button>
 
                                 {/* Remove from Wishlist Button */}
-
-
                                 <button
                                     onClick={() => removeFromWish(item.id)}
                                     className="text-red-500 hover:text-red-700 p-2"
@@ -104,7 +105,7 @@ const Wishlist = () => {
                     );
                 })}
 
-                {/* Total and Clear Button */}
+                {/* all Total and Clear Button */}
                 <div className="mt-6 flex justify-between items-center  pt-4">
                     <h3 className="text-xl font-bold">Total: ${totalPrice.toFixed(2)}</h3>
 
@@ -128,7 +129,7 @@ const Wishlist = () => {
                 <CartModal
                     isOpen={showModal}
                     onClose={closeModal}
-                    gadget={selectedGadget} // ✅ Use the selected gadget
+                    gadget={selectedGadget} // ✅ Use the selected gadget to avoid confliction
                     cartCount={getItemQuantity(selectedGadget.id)}
                 />
             )}

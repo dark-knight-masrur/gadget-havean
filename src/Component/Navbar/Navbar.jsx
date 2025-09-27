@@ -6,7 +6,7 @@ import { useCart } from "../../assets/Utilites/createContext/CartContext";
 import { useWish } from "../../assets/Utilites/createContext/WishContext";
 
 const Navbar = () => {
-
+    //dynamic nav links
     const navLinks =
         <>
             <NavLink to={'/'}><li >Home</li></NavLink>
@@ -14,14 +14,13 @@ const Navbar = () => {
             <NavLink to={'/dashboard'}><li>Dashboard</li></NavLink>
         </>
 
-
+    //add items length, subtotal money, and button in wish section
     const { cartItems } = useCart();
     const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
     const totalPrice = cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
 
-    //add items length in wish section
+    //add items length, subtotal money, and button in wish section
     const { wishItems } = useWish();
-
     const wishTotalPrice = wishItems.reduce((total, item) => total + (item.price * item.quantity), 0);
     const wishCount = wishItems.reduce((total, item) => total + item.quantity, 0);
 
@@ -51,7 +50,6 @@ const Navbar = () => {
             <div className="navbar-end gap-5">
 
                 {/* shopping cart start  */}
-
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                         <div className="indicator">
@@ -63,6 +61,9 @@ const Navbar = () => {
                     <div
                         tabIndex={0}
                         className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+
+                        {/* cart inner items  */}
+
                         <div className="card-body">
                             <span className="text-lg text-[#9835E2] font-bold">{cartCount} Items</span>
                             <span className="text-info">Subtotal: $ {totalPrice}</span>
@@ -76,7 +77,6 @@ const Navbar = () => {
 
 
                 {/* wishlist start  */}
-
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                         <div className="indicator">
@@ -88,6 +88,8 @@ const Navbar = () => {
                     <div
                         tabIndex={0}
                         className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+
+                        {/* wishlist inner items  */}
                         <div className="card-body">
                             <span className="text-lg text-[#9538E2] font-bold">{wishCount} Items</span>
                             <span className="text-info">Subtotal: $ {wishTotalPrice}</span>
@@ -97,7 +99,6 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-
                 {/* wishlist end  */}
             </div>
 

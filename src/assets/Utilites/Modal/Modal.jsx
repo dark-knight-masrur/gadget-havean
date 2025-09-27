@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useCart } from "../createContext/CartContext";
 
 
-// CartModal.jsx (Separate component is more usefull)
 const CartModal = ({ isOpen, onClose, gadget, }) => {
     const { cartItems } = useCart();
     const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);

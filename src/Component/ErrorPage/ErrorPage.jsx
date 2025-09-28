@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom';
 
 import { GiBrokenHeart } from 'react-icons/gi';
+import { Helmet } from 'react-helmet';
 const ErrorPage = () => {
 
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-[#9538E2] to-[#6B21A8] flex items-center justify-center px-4">
-
+            <Helmet>
+                <title>Gadget Havean | Page Not Found</title>
+            </Helmet>
             <div className="text-center text-white">
                 <GiBrokenHeart className="text-8xl mx-auto mb-6 opacity-80" />
                 <h1 className="text-9xl font-bold mb-4">404</h1>

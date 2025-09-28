@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useCart } from "../../../assets/Utilites/createContext/CartContext";
 import CartModal from "../../../assets/Utilites/Modal/Modal";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Wishlist = () => {
     const { wishItems, removeFromWish, clearWish } = useWish();
@@ -35,6 +36,11 @@ const Wishlist = () => {
 
             // if cart is empty 
             <div className="p-6 w-11/12 mx-auto text-center">
+
+                <Helmet>
+                    <title>Gadget Havean | Wishlist</title>
+                </Helmet>
+
                 <h2 className="text-2xl font-bold mb-4">Wishlist</h2>
 
 

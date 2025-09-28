@@ -7,6 +7,7 @@ import { useCart } from '../../assets/Utilites/createContext/CartContext';
 import { useWish } from '../../assets/Utilites/createContext/WishContext';
 import CartModal from '../../assets/Utilites/Modal/Modal';
 import WishModal from '../../assets/Utilites/Modal/WishModal';
+import { Helmet } from 'react-helmet';
 
 const GadgetDetails = () => {
 
@@ -68,6 +69,10 @@ const GadgetDetails = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>{`Gadget Havean |${gadget.id}`}</title>
+            </Helmet>
+
             {/* Hero section */}
             <div className="hero md:min-h-[60vh] pb-10 md:w-11/12 mx-auto -mt-1 bg-[#9538E2] shadow-sm border border-x-amber-500 text-white">
                 <div className="hero-content text-center">

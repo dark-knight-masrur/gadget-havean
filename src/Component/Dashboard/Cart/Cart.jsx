@@ -3,6 +3,7 @@ import { useCart } from "../../../assets/Utilites/createContext/CartContext";
 import { Link } from "react-router-dom";
 import { GiSettingsKnobs } from "react-icons/gi";
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const Cart = () => {
     const { cartItems, removeFromCart } = useCart();
@@ -47,7 +48,9 @@ const Cart = () => {
 
     return (
         <div className="p-6 md:w-11/12 mx-auto ">
-
+            <Helmet>
+                <title>Gadget Havean | Cart</title>
+            </Helmet>
 
             {cartItems && cartItems.length > 0 && (
                 <div className="justify-between md:flex gap-5 mb-6 items-center">

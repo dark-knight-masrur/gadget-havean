@@ -58,10 +58,7 @@ export const WishProvider = ({ children }) => {
         setWishItems(prevItems => prevItems.filter(item => item.id !== gadgetId));
     };
 
-    // Clear entire Wish
-    const clearWish = () => {
-        setWishItems([]);
-    };
+
 
     // Update item quantity
     const updateQuantity = (gadgetId, newQuantity) => {
@@ -109,7 +106,6 @@ export const WishProvider = ({ children }) => {
         wishItems,
         addToWish,
         removeFromWish,
-        clearWish,
         updateQuantity,
         getWishTotal,
         getWishTotalPrice,

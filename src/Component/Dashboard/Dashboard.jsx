@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './Dashboard.css'
 import { useState } from 'react';
 import Wishlist from './Wishlist/Wishlist';
@@ -28,7 +27,7 @@ const Dashboard = () => {
 
 
             {/* Conditional rendering */}
-            <div className='w-9/12 mx-auto'>
+            <div className='lg:w-9/12 mx-auto'>
                 {active === 'wishlist' ? <Wishlist /> : <Cart />}
 
             </div>

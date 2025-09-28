@@ -35,8 +35,8 @@ const Wishlist = () => {
 
             // if cart is empty 
             <div className="p-6 w-11/12 mx-auto text-center">
-                <h2 className="text-2xl font-bold mb-4">Your Shopping Wishlist</h2>
-                <h1 className="text-xl font-bold mb-4 text-center">Total Wish items is: {wishItems.length}</h1>
+                <h2 className="text-2xl font-bold mb-4">Wishlist</h2>
+
 
                 <p className=" text-xl my-8">Your cart is empty</p>
                 <Link to={'/'}>
@@ -52,8 +52,8 @@ const Wishlist = () => {
     return (
         //if anay product added 
         <div className="p-6 w-11/12 mx-auto">
-            <h2 className="text-2xl font-bold mb-4">Your Shopping Wishlist</h2>
-            <h3 className="text-xl font-bold mb-4">Total items: {wishItems.length}</h3>
+            <h2 className="text-2xl font-bold mb-4">Wishlist</h2>
+
 
             <div className="space-y-6">
                 {wishItems.map(item => {

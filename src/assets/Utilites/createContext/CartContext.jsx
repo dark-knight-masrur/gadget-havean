@@ -54,9 +54,7 @@ export const CartProvider = ({ children }) => {
         setCartItems(prevItems => prevItems.filter(item => item.id !== gadgetId));
     };
 
-    const clearCart = () => {
-        setCartItems([]);
-    };
+
 
     const updateQuantity = (gadgetId, newQuantity) => {
         if (newQuantity <= 0) {
@@ -98,7 +96,6 @@ export const CartProvider = ({ children }) => {
         cartItems,
         addToCart,
         removeFromCart,
-        clearCart,
         updateQuantity,
         getCartTotal,
         getCartTotalPrice,

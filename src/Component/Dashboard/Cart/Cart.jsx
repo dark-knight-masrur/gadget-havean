@@ -1,11 +1,11 @@
-import { FaStar, FaTrashAlt } from "react-icons/fa";
+import { FaTrashAlt } from "react-icons/fa";
 import { useCart } from "../../../assets/Utilites/createContext/CartContext";
 import { Link } from "react-router-dom";
 import { GiSettingsKnobs } from "react-icons/gi";
 import { useState, useEffect } from "react";
 
 const Cart = () => {
-    const { cartItems, removeFromCart, clearCart } = useCart();
+    const { cartItems, removeFromCart } = useCart();
     const [sort, setSort] = useState('');
     const [sortedItems, setSortedItems] = useState([]);
 
@@ -47,24 +47,28 @@ const Cart = () => {
 
     return (
         <div className="p-6 md:w-11/12 mx-auto ">
-            <h2 className="text-2xl font-bold mb-4 text-center">Your Shopping Cart</h2>
-            <h1 className="text-xl font-bold mb-4 text-center">Total items is: {cartItems?.length || 0}</h1>
+
 
             {cartItems && cartItems.length > 0 && (
-                <div className="justify-center md:justify-end flex gap-5 mb-6">
-                    <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn broder bg-[#9538E2] hover:bg-transparent hover:border-[#9538E2] hover:text-[#9538E2] text-white rounded-full">
-                            {sort ? `sort by ${sort}` : 'sort'}
-                            <GiSettingsKnobs className=" w-5 h-5" />
-                        </div>
-                        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                            <li onClick={() => handleSort('Price')}><a>Price</a></li>
-                            <li onClick={() => handleSort('Rating')}><a>Rating</a></li>
-                            <li onClick={() => handleSort('')}><a>Clear Sort</a></li>
-                        </ul>
-                    </div>
+                <div className="justify-between md:flex gap-5 mb-6 items-center">
+                    <h2 className="text-xl font-bold">Cart</h2>
+                    <div className="flex gap-4  items-center">
+                        <h3 className="md:text-xl font-bold">Total: ${totalPrice.toFixed(2)}</h3>
 
-                    <button className="btn broder bg-[#9538E2] hover:bg-transparent hover:border-[#9538E2] hover:text-[#9538E2] text-white rounded-full">Purchase</button>
+                        <div className="dropdown">
+                            <div tabIndex={0} role="button" className="btn broder bg-[#9538E2] hover:bg-transparent hover:border-[#9538E2] hover:text-[#9538E2] text-white rounded-full">
+                                {sort ? `sort by ${sort}` : 'sort'}
+                                <GiSettingsKnobs className=" w-5 h-5" />
+                            </div>
+                            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                                <li onClick={() => handleSort('Price')}><a>Price</a></li>
+                                <li onClick={() => handleSort('Rating')}><a>Rating</a></li>
+                                <li onClick={() => handleSort('')}><a>Clear Sort</a></li>
+                            </ul>
+                        </div>
+
+                        <button className="btn broder bg-[#9538E2] hover:bg-transparent hover:border-[#9538E2] hover:text-[#9538E2] text-white rounded-full">Purchase</button>
+                    </div>
                 </div>
             )}
 
@@ -102,23 +106,11 @@ const Cart = () => {
                         </div>
                     ))}
 
-                    <div className="mt-4 md:flex justify-between items-center max-sm:space-x-4 max-sm:space-y-5">
-                        <h3 className="text-xl font-bold">Total: ${totalPrice.toFixed(2)}</h3>
-                        <Link to={'/'}>
-                            <button className="btn broder border-[#9538E2] animate-bounce hover:bg-[#9538E2] text-[#9538E2] hover:text-white rounded-full">
-                                Continue Shopping
-                            </button>
-                        </Link>
-                        <button
-                            onClick={clearCart}
-                            className="hover:bg-red-500 hover:text-white px-4 py-2 rounded-full text-red-600 animate-pulse border border-red-600"
-                        >
-                            Clear Cart
-                        </button>
-                    </div>
+
                 </div>
             )}
         </div>
+
     );
 };
 
